@@ -1,0 +1,81 @@
+{% extends 'layout_base.html' %}
+{% block base %}
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+      	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	
+		   <a class="navbar-brand" href="#"><img src="https://www.madeiraislandnews.com/wp-content/uploads/2017/07/Tyrone-buy-and-sell.jpg" style="max-width: 170px;" /></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="{{url_for('main.index')}}">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="{{ url_for('buy.index')}}">Buy</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="{{ url_for('sell.index')}}">Sell</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="{{ url_for('contact.index')}}">Contact</a>
+		      </li>
+		    </ul>
+		      <!-- THIS CODE DOWN ,IS FOR Dropdown LINKS!! -->
+		      <!-- <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Contats Link
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div> -->
+
+		      
+		    </ul>
+
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		       <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item active">
+                    	<a class="nav-link" href="{{ url_for('main.signin')}}">Sign In <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    </ul>
+		    </form>
+		  </div>
+		</nav>
+        <!-- <nav class="navbar navbar-default navbar-inline" role="navigation"> -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+           
+     
+         </nav>
+      </div>
+   </div>
+
+
+
+
+ 
+    {% block body %}
+    {% endblock %}
+  
+
+{% endblock %}
+</div>

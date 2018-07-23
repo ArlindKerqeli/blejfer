@@ -1,0 +1,298 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="text-vertical-center">
+<h3> BUY </h3>  
+
+       
+        <script type="text/javascript">
+
+
+        	$(document).ready(function(){
+				$('#mybutton').click(function(){
+					$('.card-deck').append('<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">'+
+			  '<img class="card-img-top" src="'+'{{ url_for("static", filename="images/rina.jpg")}}'+ 'alt="Card image cap">'+
+			  ' <div class="card-body">'+
+			   '  <h5 class="card-title">Danger card title</h5>'+
+			   '  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'+
+			  '   <a href="#" class="btn btn-primary">Button</a>'+
+			  ' </div>'+
+ 			'</div>');
+				});
+        	});
+
+
+        </script>
+   
+        <button id="mybutton">Insert after</button>  
+
+
+<hr>
+<div class="container">
+	<div class="card-deck">
+		<div class="row">	
+
+			<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/rina.jpg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Danger card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+		    </div>
+
+		   <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/newyourk.jpeg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Warning card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+		   </div>
+
+		   	<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+				<img class="card-img-top" src="{{ url_for('static', filename='images/liberty.jpg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Dark card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+			   <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Success card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Primary card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card bg-light mb-3" style="max-width: 18rem;">
+			 <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Light card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+
+
+		 </div>	
+	 </div>	
+</div>
+</div>	
+
+<div class="container">
+	<div class="card-deck">
+		<div class="row">	
+
+			<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/rina.jpg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Danger card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+		    </div>
+
+		   <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/newyourk.jpeg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Warning card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+		   </div>
+
+		   	<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+				<img class="card-img-top" src="{{ url_for('static', filename='images/liberty.jpg')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Dark card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+			   <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Success card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+			  <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Primary card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+			<div class="card bg-light mb-3" style="max-width: 18rem;">
+			 <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Light card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Button</a>
+			  </div>
+			</div>
+
+
+
+		 </div>	
+	 </div>	
+</div>
+
+<!-- The DOWN CODE IS FOR SELL ,PRODUCTS -->
+
+<div class="text-vertical-center2">
+<h3> SELL </h3>
+<hr>
+<div class="container">
+	<div class="card-deck">
+	<div class="row">	
+
+	<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/rina.jpg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Danger card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+    </div>
+
+   <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/newyourk.jpeg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Warning card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+   </div>
+
+   	<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+		<img class="card-img-top" src="{{ url_for('static', filename='images/liberty.jpg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Dark card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+	   <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Success card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Primary card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card bg-light mb-3" style="max-width: 18rem;">
+	 <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Light card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+
+
+	 </div>	
+	 </div>	
+</div>
+</div>	
+
+<div class="container">
+	<div class="card-deck">
+	<div class="row">	
+
+	<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/rina.jpg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Danger card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+    </div>
+
+   <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/newyourk.jpeg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Warning card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+   </div>
+
+   	<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+		<img class="card-img-top" src="{{ url_for('static', filename='images/liberty.jpg')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Dark card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+	   <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Success card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+	  <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Primary card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+	<div class="card bg-light mb-3" style="max-width: 18rem;">
+	 <img class="card-img-top" src="{{ url_for('static', filename='images/street.webp')}}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Light card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Button</a>
+	  </div>
+	</div>
+
+
+
+	 </div>	
+	 </div>	
+</div>
+
+
+
+
+{% endblock %}
